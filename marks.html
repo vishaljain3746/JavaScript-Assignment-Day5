@@ -1,0 +1,47 @@
+<html>
+    <head>
+    </head>
+<body>
+    <script>
+        //Normal if_else operation
+        let marks = prompt('Enter your marks'," ");
+        if(marks<=100 && marks>50)
+            {
+            console.log(`Marks are ${marks} and grade is A`);
+            }
+        else if(marks <=50 && marks>30)
+            {
+            console.log(`Marks are ${marks} and grade is B`);
+            }
+        else if(marks<=30 && marks>=0)
+            {
+            console.log(`Marks are ${marks} and grade is c`);
+            }   
+        else
+        {
+            console.log("Wrong Input");
+        }     
+
+
+        //Switch operation
+           var x=prompt("Enter the number"," ");
+            switchOperation(x);
+                function switchOperation(scores){
+                    switch(true){
+                        case (scores<=100 && scores>50):
+                        console.log("Marks are "+x+" and grade is A");
+                            break;
+                        case (scores <=50 && scores>30):
+                        console.log("Marks are "+x+" and the grade is B");
+                            break;
+                        case (scores<=30 && scores>=0):
+                        console.log("Marks are "+x+" and the grade is C");
+                            break;
+                        default:
+                        console.log("Wrong Input");
+                            break;
+                    }
+                }
+    </script>
+</body>
+</html>
